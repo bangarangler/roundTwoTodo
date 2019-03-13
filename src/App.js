@@ -55,11 +55,11 @@ class App extends Component {
   };
 
   removeTask = e => {
-  e.preventDefault();
-  this.setState({
-    todos: this.state.todos.filter(todo => todo.completed === false)
-  })
-  }
+    e.preventDefault();
+    this.setState({
+      todos: this.state.todos.filter(todo => todo.completed === false)
+    });
+  };
 
   render() {
     return (
